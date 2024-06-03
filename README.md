@@ -1,35 +1,29 @@
 # Cash Register
 
 ## Overview
-The `checkCashRegister` function is a solution for managing a cash register drawer in a retail environment. It determines the change to be returned based on the purchase price and the payment provided, using the available currency in the drawer.
+The Cash Register project is a simple yet powerful tool designed to assist in retail transactions by accurately calculating the change to be given to customers. It provides a user-friendly interface for determining the appropriate denominations of currency to return based on the purchase price and the cash provided by the customer.
 
-## Features
-- Calculates the change due from a transaction.
-- Checks if the cash register has sufficient funds to provide the exact change.
-- Returns the status of the cash register drawer: `INSUFFICIENT_FUNDS`, `CLOSED`, or `OPEN`.
-- Returns the specific denominations used for the change.
+## Key Features
+- Accurate Change Calculation: The project utilizes precise algorithms to calculate the exact change due to the customer, ensuring accuracy in every transaction.
+- Flexible Denomination Handling: It supports various denominations of currency, including pennies, nickels, dimes, quarters, dollar bills, and more, allowing for flexibility in different retail environments.
+- Intuitive User Interface: With a straightforward interface, users can easily input the purchase price, cash provided, and cash-in-drawer details, receiving clear and concise information about the change to be given.
+- Comprehensive Status Reporting: The project provides detailed status reports, indicating whether the cash register has sufficient funds to provide the exact change, if the drawer is closed due to exact change availability, or if the funds are insufficient.
 
-## Usage
-The function `checkCashRegister(price, cash, cid)` takes three arguments:
-1. `price` (number): The purchase price.
-2. `cash` (number): The payment provided by the customer.
-3. `cid` (array): A 2D array representing the available currency in the drawer.
+ ## How to Use
+- Input Purchase Details: Enter the purchase price and the cash provided by the customer into the designated fields.
+- Cash-in-Drawer: Optionally, provide the details of the available currency denominations in the cash register drawer.
+- Calculate Change: Click the "Calculate Change" button to initiate the calculation process.
+- View Results: Review the status of the transaction and the specific denominations of currency to be returned as change.
+- Repeat as Needed: Use the tool for multiple transactions, ensuring accuracy and efficiency in every retail interaction.
 
-The function returns an object with two keys:
-- `status` (string): The status of the transaction (`INSUFFICIENT_FUNDS`, `CLOSED`, or `OPEN`).
-- `change` (array): An array of the denominations used to provide the change.
+## Project Structure
+- index.html: The main HTML file containing the user interface elements.
+- script.js: The JavaScript file containing the logic for calculating change and handling user interactions.
+- style.css: The CSS file for styling the user interface components.
 
-## Example
-```javascript
-checkCashRegister(19.5, 20, [
-  ["PENNY", 1.01],
-  ["NICKEL", 2.05],
-  ["DIME", 3.1],
-  ["QUARTER", 4.25],
-  ["ONE", 90],
-  ["FIVE", 55],
-  ["TEN", 20],
-  ["TWENTY", 60],
-  ["ONE HUNDRED", 100]
-]);
-// Returns: { status: "OPEN", change: [["QUARTER", 0.5]] }
+## Getting Started
+- Clone the Repository: Clone the project repository to your local machine using Git.
+- Open the HTML File: Open the index.html file in a web browser to access the user interface.
+- Enter Transaction Details: Input the purchase price and cash provided, optionally including cash-in-drawer details.
+- Calculate Change: Click the "Calculate Change" button to generate the change calculation.
+- Review Results: Review the status and denominations of currency to be returned as change.

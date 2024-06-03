@@ -1,0 +1,14 @@
+{
+  "name": "my-project",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "nodemon script.js",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.2",
+    "vite": "^5.0.12"
+  }
+}
